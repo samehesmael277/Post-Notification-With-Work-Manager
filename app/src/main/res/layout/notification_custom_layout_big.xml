@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp">
+
+    <!--Image to be displayed beside the notification text-->
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_funny" />
+
+    <!-- Parent layout for holding the Title and the Body-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <!-- TextView for Title -->
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.Compat.Notification.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zekton"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            tools:text="Title" />
+
+        <!-- TextView for Body -->
+        <TextView
+            android:id="@+id/message"
+            style="@style/TextAppearance.Compat.Notification.Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zekton"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/_12ssp"
+            tools:text="Message" />
+
+    </LinearLayout>
+
+</LinearLayout>

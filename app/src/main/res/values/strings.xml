@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Post Notification With Work Manager</string>
+    <string name="please_grant_notification_permission">Please grant Notification permission from App Settings</string>
+    <string name="you_will_receiving_posts_notification">You Will Receiving Posts Notification</string>
+</resources>
